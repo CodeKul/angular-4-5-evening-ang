@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-12" [style.border]="brd">
+    codekul.com , e = mc2
+  </div>
+</div>
+<div class="row" >
+  <div class="col-md-12" [style.border]="brd" [class.well]="isHide">
+    <input (click)="brd=brdBlue" type="button" class="btn btn-primary" value="Blue"/>
+    <input (click)="brd=brdRed" type="button" class="btn btn-danger" value="Red"/>    
+    <input (click)="brd=brdGreen" type="button" class="btn btn-success" value="Green"/>    
+    <input (click)="isHide = !isHide" type="button" class="btn" value="Visibility"/>    
+  </div>
+</div>
