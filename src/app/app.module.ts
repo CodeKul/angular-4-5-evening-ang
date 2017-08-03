@@ -9,6 +9,8 @@ import { EventBindingComponent } from './databinding/event-binding.component';
 import { PropertyBindingComponent } from './databinding/property-binding.component';
 import { FormsModule } from '@angular/forms';
 import { AwesomeComponent } from './databinding/awesome.component';
+import { InterCompComComponent } from './inter-comp-com/inter-comp-com.component';
+import { InComComponent } from './databinding/in-com.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { AwesomeComponent } from './databinding/awesome.component';
     DatabindingComponent,
     EventBindingComponent,
     PropertyBindingComponent,
-    AwesomeComponent
+    AwesomeComponent,
+    InterCompComComponent,
+    InComComponent
   ],
   imports: [
     BrowserModule,
