@@ -34,9 +34,11 @@
 </div>
 <div class="row">
   <div class="col-md-12">
-    <input type="button" (click)="zy = !zy"/>
+    <input type="button" (click)="zy = !zy" />
   </div>
 </div>
 <app-awesome></app-awesome>
 <app-in-com [isThere]="zy"></app-in-com>
 <app-in-com [isThere]="false"></app-in-com>
+
+<app-out-com (clicked)="zy = $event"></app-out-com>

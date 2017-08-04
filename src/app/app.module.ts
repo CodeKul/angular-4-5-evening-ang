@@ -11,6 +11,9 @@ import { FormsModule } from '@angular/forms';
 import { AwesomeComponent } from './databinding/awesome.component';
 import { InterCompComComponent } from './inter-comp-com/inter-comp-com.component';
 import { InComComponent } from './databinding/in-com.component';
+import { OutComComponent } from './databinding/out-com.component';
+import { PanelComponent } from './inter-comp-com/panel.component';
+import { ContentComponent } from './inter-comp-com/content.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { InComComponent } from './databinding/in-com.component';
     PropertyBindingComponent,
     AwesomeComponent,
     InterCompComComponent,
-    InComComponent
+    InComComponent,
+    OutComComponent,
+    PanelComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
