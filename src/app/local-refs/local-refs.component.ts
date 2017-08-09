@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild, ContentChild } from '@angular/core';
 
 @Component({
   selector: 'app-local-refs',
@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocalRefsComponent implements OnInit {
 
+  private nm: string;
+
+  @ViewChild('myNm')
+  private myNm: ElementRef;
+
+  @ContentChild('hello')
+  private hello: ElementRef;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  clicked() {
+    this.nm = this.myNm.nativeElement.value + this.hello.nativeElement.value;
+  }
 }

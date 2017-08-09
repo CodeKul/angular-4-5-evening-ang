@@ -1,18 +1,5 @@
 <div class="container">
-  <app-content-projection>
-    <div class="row">
-      <div class="col-md-12">
-        <input type="text">
-        <input type="button" class="btn btn-primary">
-      </div>
-    </div>
-  </app-content-projection>
-
-  <app-content-projection>
-    <div class="row">
-      <div class="col-md-12">
-        <h1>This second projection</h1>
-      </div>
-    </div>
-  </app-content-projection>
+  <app-local-refs>
+      <input type="text" #hello/>
+  </app-local-refs>
 </div>

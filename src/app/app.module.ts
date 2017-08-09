@@ -16,6 +16,7 @@ import { PanelComponent } from './inter-comp-com/panel.component';
 import { ContentComponent } from './inter-comp-com/content.component';
 import { ContentProjectionComponent } from './content-projection/content-projection.component';
 import { LocalRefsComponent } from './local-refs/local-refs.component';
+import { DrectivesComponent } from './drectives/drectives.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { LocalRefsComponent } from './local-refs/local-refs.component';
     PanelComponent,
     ContentComponent,
     ContentProjectionComponent,
-    LocalRefsComponent
+    LocalRefsComponent,
+    DrectivesComponent
   ],
   imports: [
     BrowserModule,
