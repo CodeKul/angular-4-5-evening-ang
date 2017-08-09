@@ -14,6 +14,8 @@ import { InComComponent } from './databinding/in-com.component';
 import { OutComComponent } from './databinding/out-com.component';
 import { PanelComponent } from './inter-comp-com/panel.component';
 import { ContentComponent } from './inter-comp-com/content.component';
+import { ContentProjectionComponent } from './content-projection/content-projection.component';
+import { LocalRefsComponent } from './local-refs/local-refs.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ContentComponent } from './inter-comp-com/content.component';
     InComComponent,
     OutComComponent,
     PanelComponent,
-    ContentComponent
+    ContentComponent,
+    ContentProjectionComponent,
+    LocalRefsComponent
   ],
   imports: [
     BrowserModule,
