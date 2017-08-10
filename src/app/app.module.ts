@@ -18,6 +18,11 @@ import { ContentProjectionComponent } from './content-projection/content-project
 import { LocalRefsComponent } from './local-refs/local-refs.component';
 import { DrectivesComponent } from './drectives/drectives.component';
 import { MyAttrDirDirective } from './drectives/my-attr-dir.directive';
+import { NavBarDirective } from './drectives/nav-bar.directive';
+import { NavBarCompComponent } from './drectives/nav-bar-comp.component';
+import { Ng2TableModule } from 'ng2-table/ng2-table';
+import { ExtraTabComponent } from './drectives/extra-tab.component';
+import {RatingModule} from 'ng2-rating';
 
 @NgModule({
   declarations: [
@@ -36,11 +41,16 @@ import { MyAttrDirDirective } from './drectives/my-attr-dir.directive';
     ContentProjectionComponent,
     LocalRefsComponent,
     DrectivesComponent,
-    MyAttrDirDirective
+    MyAttrDirDirective,
+    NavBarDirective,
+    NavBarCompComponent,
+    ExtraTabComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    Ng2TableModule,
+    RatingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
