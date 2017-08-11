@@ -23,6 +23,7 @@ import { NavBarCompComponent } from './drectives/nav-bar-comp.component';
 import { Ng2TableModule } from 'ng2-table/ng2-table';
 import { ExtraTabComponent } from './drectives/extra-tab.component';
 import {RatingModule} from 'ng2-rating';
+import { CustStrDirDirective } from './drectives/cust-str-dir.directive';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import {RatingModule} from 'ng2-rating';
     MyAttrDirDirective,
     NavBarDirective,
     NavBarCompComponent,
-    ExtraTabComponent
+    ExtraTabComponent,
+    CustStrDirDirective
   ],
   imports: [
     BrowserModule,
