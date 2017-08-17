@@ -1,3 +1,5 @@
+import { FrontendService } from './service/frontend.service';
+import { BackendService } from './service/backend.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -24,6 +26,7 @@ import { Ng2TableModule } from 'ng2-table/ng2-table';
 import { ExtraTabComponent } from './drectives/extra-tab.component';
 import {RatingModule} from 'ng2-rating';
 import { CustStrDirDirective } from './drectives/cust-str-dir.directive';
+import { ServiceComponent } from './service/service.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,8 @@ import { CustStrDirDirective } from './drectives/cust-str-dir.directive';
     NavBarDirective,
     NavBarCompComponent,
     ExtraTabComponent,
-    CustStrDirDirective
+    CustStrDirDirective,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +58,7 @@ import { CustStrDirDirective } from './drectives/cust-str-dir.directive';
     Ng2TableModule,
     RatingModule
   ],
-  providers: [],
+  providers: [BackendService, FrontendService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
