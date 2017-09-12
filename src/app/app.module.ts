@@ -27,6 +27,8 @@ import { ExtraTabComponent } from './drectives/extra-tab.component';
 import {RatingModule} from 'ng2-rating';
 import { CustStrDirDirective } from './drectives/cust-str-dir.directive';
 import { ServiceComponent } from './service/service.component';
+import { FormsComponent } from './forms/forms.component';
+import { TempDrivenComponent } from './forms/temp-driven.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,9 @@ import { ServiceComponent } from './service/service.component';
     NavBarCompComponent,
     ExtraTabComponent,
     CustStrDirDirective,
-    ServiceComponent
+    ServiceComponent,
+    FormsComponent,
+    TempDrivenComponent
   ],
   imports: [
     BrowserModule,
