@@ -5,13 +5,16 @@
         <h4 class="heading"><strong>Quick </strong> Contact <span></span></h4>
         <div class="form">
            <form (ngSubmit)="onFrmSub(myFrm)" #myFrm="ngForm"> 
+             
             <input 
               type="text" 
               placeholder="User Name" 
               class="txt"
               [(ngModel)]="dtFrm.usNm"
               name="usNm"
-              s>
+              required
+              #usNm="ngModel">
+              <span class="text-muted" *ngIf="!usNm.valid">Enter User Name</span>
 
             <input 
               type="text" 
@@ -19,7 +22,10 @@
               class="txt"
               [(ngModel)]="dtFrm.eml"
               name="eml"
-              required>
+              required
+              pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+              #eml="ngModel">
+              <span class="text-muted" *ngIf="!eml.valid">Enter User Name</span>
 
             <input 
               type="text" 
@@ -27,7 +33,10 @@
               class="txt"
               [(ngModel)]="dtFrm.pass"
               name="pass"
-              required>
+              required
+              #pass="ngModel">
+
+              <span class="text-muted" *ngIf="!pass.valid">Enter User Name</span>
 
             <input 
               type="submit" 

@@ -13,6 +13,7 @@ export class TempDrivenComponent implements OnInit {
     eml: '',
     pass: ''
   };
+  usNmMdl = '';
   constructor() { }
 
   ngOnInit() {

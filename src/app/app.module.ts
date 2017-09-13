@@ -2,6 +2,7 @@ import { FrontendService } from './service/frontend.service';
 import { BackendService } from './service/backend.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
@@ -24,11 +25,12 @@ import { NavBarDirective } from './drectives/nav-bar.directive';
 import { NavBarCompComponent } from './drectives/nav-bar-comp.component';
 import { Ng2TableModule } from 'ng2-table/ng2-table';
 import { ExtraTabComponent } from './drectives/extra-tab.component';
-import {RatingModule} from 'ng2-rating';
+import { RatingModule } from 'ng2-rating';
 import { CustStrDirDirective } from './drectives/cust-str-dir.directive';
 import { ServiceComponent } from './service/service.component';
 import { FormsComponent } from './forms/forms.component';
 import { TempDrivenComponent } from './forms/temp-driven.component';
+import { DataDrivenComponent } from './forms/data-driven.component';
 
 @NgModule({
   declarations: [
@@ -54,13 +56,15 @@ import { TempDrivenComponent } from './forms/temp-driven.component';
     CustStrDirDirective,
     ServiceComponent,
     FormsComponent,
-    TempDrivenComponent
+    TempDrivenComponent,
+    DataDrivenComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     Ng2TableModule,
-    RatingModule
+    RatingModule,
+    ReactiveFormsModule
   ],
   providers: [BackendService, FrontendService],
   bootstrap: [AppComponent]
