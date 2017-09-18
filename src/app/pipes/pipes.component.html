@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Pipes</h1>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Date is {{ dt | date:"yyyy MMM dd"}}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h3> Money is <span class="badge badge-secondary">{{ money | currency:"INR" }}</span></h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Bike {{ bike | slice:1:3 | uppercase }}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Bike {{ bike | ascii:1 | uppercase }}</h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <input type="text" [(ngModel)]="mobile" placeholder="Search">
+      <input type="text" placeholder="New mobile" #nwMob>
+      <input type="button" value="Add" class="btn btn-primary" (click)="adNwMob(nwMob.value)">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <ul>
+        <li *ngFor="let mob of mobiles | mobileFilter:mobile">{{mob}}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      Async Pipe is {{prom | async}}
+    </div>
+  </div>
+
+</div>

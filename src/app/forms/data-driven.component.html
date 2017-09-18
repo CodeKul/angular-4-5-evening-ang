@@ -12,6 +12,7 @@
               class="txt"
               formControlName="usNm">
               <span class="text-muted" *ngIf="!myFrm.controls.usNm.valid">Enter User Name</span>
+              <span class="text-muted" *ngIf="!myFrm.controls.usNm.valid">{{myFrm.controls.usNm.errors.myErr}}</span>
 
             <input 
               type="text" 

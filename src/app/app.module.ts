@@ -31,6 +31,9 @@ import { ServiceComponent } from './service/service.component';
 import { FormsComponent } from './forms/forms.component';
 import { TempDrivenComponent } from './forms/temp-driven.component';
 import { DataDrivenComponent } from './forms/data-driven.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { AsciiPipe } from './pipes/ascii.pipe';
+import { MobileFilterPipe } from './pipes/mobile-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -57,7 +60,10 @@ import { DataDrivenComponent } from './forms/data-driven.component';
     ServiceComponent,
     FormsComponent,
     TempDrivenComponent,
-    DataDrivenComponent
+    DataDrivenComponent,
+    PipesComponent,
+    AsciiPipe,
+    MobileFilterPipe
   ],
   imports: [
     BrowserModule,
