@@ -34,6 +34,8 @@ import { DataDrivenComponent } from './forms/data-driven.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { AsciiPipe } from './pipes/ascii.pipe';
 import { MobileFilterPipe } from './pipes/mobile-filter.pipe';
+import { HttpComponent } from './http/http.component';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -63,14 +65,16 @@ import { MobileFilterPipe } from './pipes/mobile-filter.pipe';
     DataDrivenComponent,
     PipesComponent,
     AsciiPipe,
-    MobileFilterPipe
+    MobileFilterPipe,
+    HttpComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     Ng2TableModule,
     RatingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpModule
   ],
   providers: [BackendService, FrontendService],
   bootstrap: [AppComponent]

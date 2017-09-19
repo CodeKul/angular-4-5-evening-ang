@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PipesComponent implements OnInit {
 
+  private myObj = {
+    'key1': 'value',
+    'keyInt': 10
+  };
   private dt: string;
   private money: number = 45;
   private bike: string = 'duccati';
